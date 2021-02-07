@@ -1,1 +1,1 @@
-This is a fun purpose only discord bot
+This is a fun only purpose discord bot
