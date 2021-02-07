@@ -1,0 +1,1 @@
+This is a fun purpose only discord bot
