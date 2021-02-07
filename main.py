@@ -1,15 +1,16 @@
+import os
 import discord
+from dotenv import load_dotenv
 
-bot_token = 'ODA3ODgyNjUyMzA0NDA4NTg2.YB-dWg.7jeeo0sGv0ts56hlXv54353aBAI'
+load_dotenv()
+
 client = discord.Client()
-
-channel_test = client.get_channel(482182097461575682)
-channel_general = client.get_channel(807909900671385632)
-
 
 @client.event
 async def on_ready():
+    channel_test = client.get_channel(807909900671385632)
     print('Logged in as {0}'.format(client.user))
+    await channel_test.send('Jsuis pret batard')
 
 
-client.run(bot_token)
+client.run(os.getenv("TOKEN"))
