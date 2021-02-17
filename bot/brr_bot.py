@@ -7,3 +7,7 @@ class BrrBot(commands.Bot):
     async def on_ready(self):
         channel_test = self.get_channel(807909900671385632)
         await channel_test.send('WeshWesh')
+
+
+
+

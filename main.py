@@ -1,4 +1,7 @@
-from brr_bot import BrrBot
-import env
+from bot.brr_bot import BrrBot
+from managers import env_manager
+from database.brr_db import Brr_db
 
-BrrBot().run(env.getToken())
+Brr_db.init_db()
+
+BrrBot().run(env_manager.getToken())
