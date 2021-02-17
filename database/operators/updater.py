@@ -1,0 +1,2 @@
+class Updater(object):
+    pass
