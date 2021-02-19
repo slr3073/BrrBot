@@ -1,8 +1,8 @@
 from bot.brr_bot import BrrBot
-from managers import env_manager
-from database.brr_db import Brr_db
+from data import env
+from data.database.database import Database
 
-Brr_db.init_db()
+Database.init()
 
-Brr_db.display.members()
-BrrBot().run(env_manager.getToken())
+Database.debug.display_ranks()
+BrrBot().run(env.getToken())
